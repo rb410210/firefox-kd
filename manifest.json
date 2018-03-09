@@ -12,12 +12,8 @@
       "strict_min_version": "50.0"
     }
   },
-  "permissions": ["contextMenus", "nativeMessaging"],
+  "permissions": ["contextMenus", "nativeMessaging", "activeTab"],
   "background": {
-    "scripts": ["background-scripts.js"]
-  },
-  "content_scripts": [{
-    "matches": ["*://*/*"],
-    "js": ["kd.js"]
-  }]
+    "scripts": ["kd.js"]
+  }
 }
