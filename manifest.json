@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Push to Kodi",
+  "version": "1.0",
+  "description": "Pushes Content to Kodi",
+  "icons": {
+    "48": "icons/kd-48.png"
+  },
+  "applications": {
+    "gecko": {
+      "id": "firefox_kd@rb410210",
+      "strict_min_version": "50.0"
+    }
+  },
+  "permissions": ["contextMenus", "nativeMessaging"],
+  "background": {
+    "scripts": ["background-scripts.js"]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["kd.js"]
+  }]
+}

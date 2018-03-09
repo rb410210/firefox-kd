@@ -1,0 +1,7 @@
+{
+  "name": "firefox_kd_native",
+  "description": "calls kd shell script",
+  "path": "/home/rohit/rb410210/firefox-kd/launcher.py",
+  "type": "stdio",
+  "allowed_extensions": ["firefox_kd@rb410210"]
+}
