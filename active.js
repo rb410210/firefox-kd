@@ -1,1 +1,1 @@
-document.body.style.opacity = .4;
+document.body.style.opacity = .7;
