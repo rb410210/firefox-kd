@@ -5,4 +5,5 @@
 
 `zip -r -FS ../firefox-kd.zip *`
 
-`cp ./firefox_kd_native.json ~/.mozilla/native-messaging-hosts/firefox_kd_native.json`
+
+`REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\NativeMessagingHosts\firefox-kd" /ve /d "D:\GitHub\rb410210\firefox-kd\firefox_kd_native.json" /f`
