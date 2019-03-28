@@ -4,11 +4,6 @@ browser.contextMenus.create({
   contexts: ["link"]
 });
 
-browser.contextMenus.create({
-  id: "pushToKodiVideo",
-  title: "Push to Kodi",
-  contexts: ["video"]
-});
 
 function onResponse(response) {
   console.log("Received " + response);
@@ -36,8 +31,5 @@ browser.contextMenus.onClicked.addListener(function(info, tab) {
     var sending = browser.runtime.sendNativeMessage("firefox_kd_native",
       info.linkUrl);
     sending.then(onResponse, onError);
-  }
-  if (info && info.menuItemId === 'pushToKodiVideo') {
-    console.log("Push video to kodi", info, tab);
   }
 });
